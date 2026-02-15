@@ -30,13 +30,7 @@
       width: 100%;
    max-width: 420px;
    overflow: hidden;
-
  }
-
-
-
-
-
 
  /* ===== HEADER ===== */
  .header {
@@ -63,13 +57,11 @@
  .header p {
    /*Descripcion Breve*/
    font-size: 15px;
-   
  }
 
  .titulo-principal {
    font-family: 'Michroma', sans-serif;
  }
-
  /* FIN HEADER ===== */
 
  /* 2 BOTONES ACTIONS  ===== */
@@ -81,7 +73,7 @@
  }
 
  .action {
-   background: rgb(23, 58, 214);
+   background: rgb(14, 5, 75);
    color: #fff;
    text-decoration: none;
    border-radius: 15px;
@@ -173,10 +165,10 @@
    width: 100%;
    max-width: 420px;
    overflow: hidden;
-   border-radius: 1rem;
+   border-radius: 2rem;
    box-shadow: 0 10px 10px rgba(187, 184, 184, 0.45);
    margin: 1rem;
-   border: 2px solid #190af0;
+   border: 3px solid #190af0;
  }
    }
 

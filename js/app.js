@@ -128,11 +128,7 @@ function endDrag(e) {
 
 
 
-
-
-
-
-/* SHARE */
+/* SHARE COMPARTIR WEB*/
 async function sharePage(){
   const data = {
     title:'COMPUGUED',
@@ -155,6 +151,7 @@ function copyLink(){
   navigator.clipboard.writeText(location.href)
     .then(() => alert('Enlace copiado'));
 }
+/* FIN SHARE COMPARTIR WEB*/
 
 /* WEATHER */
 const tempEl = document.querySelector('.temp');
@@ -180,9 +177,9 @@ function updateWeather(){
       const t = Math.round(w.temperature);
 
       /* Icono fijo: termómetro */
-      iconEl.className = 'fas fa-temperature-low thermo';
+      iconEl.className = 'fas fa-temperature-arrow-up';
 
-      iconEl.style.color = '#c7d6e9'; 
+      iconEl.style.color = '#ffffffff'; 
 
 
       tempEl.textContent = `${t} °C`;
@@ -199,8 +196,6 @@ updateWeather();
 
 /* Actualizar cada 10 minutos */
 setInterval(updateWeather, 600000);
-
-
 
 /* IR A MAPA */
 function goToMap(){
