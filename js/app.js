@@ -81,50 +81,50 @@ function stopAutoplay() {
 
 startAutoplay();
 
-/* ===== SWIPE / DRAG ===== */
-let startX = 0;
-let isDragging = false;
+/* ===== SWIPE / DRAG ===== PARA QUE FUNCIONE CON TACTIL - DEDO CELULAR*/
+// let startX = 0;
+// let isDragging = false;
 
-track.addEventListener('touchstart', startDrag);
-track.addEventListener('mousedown', startDrag);
+// track.addEventListener('touchstart', startDrag);
+// track.addEventListener('mousedown', startDrag);
 
-track.addEventListener('touchmove', dragMove);
-track.addEventListener('mousemove', dragMove);
+// track.addEventListener('touchmove', dragMove);
+// track.addEventListener('mousemove', dragMove);
 
-track.addEventListener('touchend', endDrag);
-track.addEventListener('mouseup', endDrag);
-track.addEventListener('mouseleave', endDrag);
+// track.addEventListener('touchend', endDrag);
+// track.addEventListener('mouseup', endDrag);
+// track.addEventListener('mouseleave', endDrag);
 
-function startDrag(e) {
-  stopAutoplay();
-  isDragging = true;
-  startX = e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
-}
+// function startDrag(e) {
+//   stopAutoplay();
+//   isDragging = true;
+//   startX = e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
+// }
 
-function dragMove(e) {
-  if (!isDragging) return;
-  const x = e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
-  const diff = startX - x;
+// function dragMove(e) {
+//   if (!isDragging) return;
+//   const x = e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
+//   const diff = startX - x;
 
-  track.style.transition = 'none';
-  track.style.transform = `translateX(-${index * slideWidth + diff}px)`;
-}
+//   track.style.transition = 'none';
+//   track.style.transform = `translateX(-${index * slideWidth + diff}px)`;
+// }
 
-function endDrag(e) {
-  if (!isDragging) return;
-  isDragging = false;
+// function endDrag(e) {
+//   if (!isDragging) return;
+//   isDragging = false;
 
-  const endX = e.type.includes('mouse') ? e.pageX : e.changedTouches[0].clientX;
-  const diff = startX - endX;
+//   const endX = e.type.includes('mouse') ? e.pageX : e.changedTouches[0].clientX;
+//   const diff = startX - endX;
 
-  track.style.transition = 'transform 0.4s ease';
+//   track.style.transition = 'transform 0.4s ease';
 
-  if (diff > 50) moveNext();
-  else if (diff < -50) movePrev();
-  else setPosition();
+//   if (diff > 50) moveNext();
+//   else if (diff < -50) movePrev();
+//   else setPosition();
 
-  startAutoplay();
-}
+//   startAutoplay();
+// }
 
 
 
