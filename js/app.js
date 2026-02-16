@@ -132,7 +132,7 @@ function endDrag(e) {
 async function sharePage(){
   const data = {
     title:'COMPUGUED',
-    text:'Catálogo tecnológico',
+    text:'Catálogo Tecnológico',
     url:location.href
   };
 
@@ -156,38 +156,38 @@ function copyLink(){
 /* WEATHER */
 const tempEl = document.querySelector('.temp');
 const iconEl = document.querySelector('.weather i');
-const weatherTextEl = document.getElementById('weatherText');
+// const weatherTextEl = document.getElementById('weatherText');
 
 const WEATHER_API =
   'https://api.open-meteo.com/v1/forecast?latitude=-6.7714&longitude=-79.8409&current_weather=true';
 
-function getPeriodoChiclayo() {
-  const hora = new Date().getHours(); // hora local del navegador (Perú)
+// function getPeriodoChiclayo() {
+//   const hora = new Date().getHours(); // hora local del navegador (Perú)
 
-  if (hora >= 6 && hora < 12) return 'Día';
-  if (hora >= 12 && hora < 19) return 'Tarde';
-  return 'Noche';
-}
+//   if (hora >= 6 && hora < 12) return 'Día';
+//   if (hora >= 12 && hora < 19) return 'Tarde';
+//   return 'Noche';
+// }
 
 function updateWeather(){
   fetch(WEATHER_API)
     .then(r => r.json())
     .then(d => {
       const w = d.current_weather;
-      const t = Math.round(w.temperature);
+      const t = Math.round(w.temperature) + 1; // ← suma fija de +1
 
       /* Icono fijo: termómetro */
-      iconEl.className = 'fas fa-temperature-arrow-up';
+      iconEl.className = 'fa-solid fa-temperature-empty';
 
       iconEl.style.color = '#ffffffff'; 
 
 
       tempEl.textContent = `${t} °C`;
-      weatherTextEl.textContent = getPeriodoChiclayo();
+      // weatherTextEl.textContent = getPeriodoChiclayo();
     })
     .catch(() => {
       tempEl.textContent = '-- °C';
-      weatherTextEl.textContent = 'No disponible';
+      // weatherTextEl.textContent = 'No disponible';
     });
 }
 
@@ -199,5 +199,5 @@ setInterval(updateWeather, 600000);
 
 /* IR A MAPA */
 function goToMap(){
-  window.location.href = 'mapa2.html';
+  window.location.href = 'mapa.html';
 }
