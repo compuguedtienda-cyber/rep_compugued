@@ -199,5 +199,10 @@ setInterval(updateWeather, 600000);
 
 /* IR A MAPA */
 function goToMap(){
+  window.location.href = 'mapa.html';
+}
+
+/* IR A MAPA */
+function goToWeb1(){
   window.location.href = 'https://www.movilbus.pe/';
 }
