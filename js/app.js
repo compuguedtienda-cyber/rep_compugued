@@ -197,12 +197,23 @@ updateWeather();
 /* Actualizar cada 10 minutos */
 setInterval(updateWeather, 600000);
 
-/* IR A MAPA */
-function goToMap(){
-  window.location.href = 'mapa.html';
+
+/* IR A FACEBOOK */
+function goToFace(){
+  window.location.href = 'https://www.facebook.com/compugued.tec';
+}
+
+/* IR A INSTAGRAM */
+function goToInst(){
+  window.location.href = 'https://www.instagram.com/compugued/';
+}
+
+/* IR A CUENTAS */
+function goToCuentas(){
+  window.location.href = 'cuentas.html';
 }
 
 /* IR A MAPA */
-function goToWeb1(){
-  window.location.href = 'https://www.movilbus.pe/';
+function goToMap(){
+  window.location.href = 'mapa.html';
 }
