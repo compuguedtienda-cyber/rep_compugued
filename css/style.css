@@ -27,7 +27,7 @@
  }
 
  .phone {
-      width: 100%;
+   width: 100%;
    max-width: 420px;
    overflow: hidden;
  }
@@ -50,13 +50,14 @@
 
  .header h1 {
    /*Texto COMPUGUED*/
-   margin: 8px 0 4px;
+   margin: 1px 0 2px;
    font-size: 22px;
  }
 
  .header p {
    /*Descripcion Breve*/
    font-size: 15px;
+   padding: 1px;
  }
 
  .titulo-principal {
@@ -69,15 +70,15 @@
    display: grid;
    grid-template-columns: 1fr 1fr;
    gap: 20px;
-   padding: 15px 5px 20px;
+   padding: 10px 5px 20px;
  }
 
  .action {
-   background: rgb(14, 5, 75);
+   background: rgb(0, 0, 0);
    color: #fff;
    text-decoration: none;
    border-radius: 15px;
-   padding: 10px 20px;
+   padding: 5px 20px;
    text-align: center;
    font-size: 15px;
    font-weight: 600;
@@ -180,9 +181,6 @@
      padding: 1rem;
    }
  
-
-
-
  @media(min-width:1600px) {
    body {
      padding: 40px;
@@ -201,7 +199,6 @@
      /* background-color: rgb(14, 168, 143); */
      padding: 1rem;
    }
-
 
  }
 
@@ -226,7 +223,7 @@
    height: 195px;
    overflow: hidden;
    background: #fff;
-   border-radius: 10px;
+   border-radius: 15px;
  }
 
  .slider-track {
@@ -376,7 +373,7 @@
    flex-direction:row;
    justify-content: center;
    align-items: center;
-   gap: 15px;
+   gap: 30px;
 
    /* separación entre botones */
  }
