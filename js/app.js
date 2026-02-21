@@ -208,6 +208,11 @@ function goToInst(){
   window.location.href = 'https://www.instagram.com/compugued/';
 }
 
+/* IR A ABOUT */
+function goToAbout(){
+  window.location.href = 'about.html';
+}
+
 /* IR A CUENTAS */
 function goToCuentas(){
   window.location.href = 'cuentas.html';
