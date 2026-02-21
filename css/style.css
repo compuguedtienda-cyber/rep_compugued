@@ -14,11 +14,13 @@
 
  body {
    margin: 0;
-   background: linear-gradient(160deg, #1a1f3c, #0b0f24);
-   display: flex;
+   /* background: linear-gradient(160deg, #1a1f3c, #0b0f24); */
+      display: flex;
    justify-content: center;
    padding: 0px;
    color: var(--text);
+   /* Control fondo imagen; */
+   background-image: url("../img/fondo/f1.jpg");
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
@@ -74,7 +76,7 @@
  }
 
  .action {
-   background: rgb(0, 0, 0);
+   /* background: rgb(0, 0, 0); */
    color: #fff;
    text-decoration: none;
    border-radius: 15px;
@@ -184,7 +186,7 @@
  @media(min-width:1600px) {
    body {
      padding: 40px;
-     background-image: url("../img/fondo/joker.jpg");
+     background-image: url("../img/fondo/f1.jpg");
      background-size: cover;
      background-position: center;
      background-repeat: no-repeat;
