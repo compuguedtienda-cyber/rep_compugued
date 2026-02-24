@@ -14,14 +14,13 @@
 
  body {
    margin: 0;
-   /* background: linear-gradient(160deg, #1a1f3c, #0b0f24); */
+  background: linear-gradient(160deg, #1a1f3c, #0b0f24);
       display: flex;
    justify-content: center;
    padding: 0px;
    color: var(--text);
    /* Control fondo imagen; */
-   /* background-image: url("../img/fondo/f1.jpg"); */
- 
+   
    /* FIN control fondo imagen; */
  }
 
@@ -147,7 +146,7 @@
  /* FIN ACTIONS ===== */
 
 
-
+ 
 
 
  .container {
@@ -346,22 +345,10 @@
 
 
 
-
-  /* ===== RESPONSIVE ===== */
+ /* ===== RESPONSIVE ===== */
  @media(min-width:768px) {
-body {
-   margin: 0;
-   background: linear-gradient(160deg, #1a1f3c, #0b0f24);
-      display: flex;
-   justify-content: center;
-   padding: 0px;
-   color: var(--text);
-
- }
-
-
     .phone {
-   width: 100%;
+    width: 100%;
    max-width: 420px;
    overflow: hidden;
    border-radius: 1rem;
@@ -371,7 +358,7 @@ body {
  }
  }
 
- @media(min-width:769px) {
+ /* @media(min-width:769px) {
    .phone {
    width: 100%;
    max-width: 420px;
@@ -381,7 +368,7 @@ body {
    margin: 1rem;
    border: 3px solid #190af0;
  }
-   }
+   } */
 
    .contorno {
      width: 100%;
@@ -406,6 +393,7 @@ body {
      max-width: 420px;
      border-radius: 1rem;
      overflow: hidden;
+     /* background-color: rgb(14, 168, 143); */
      padding: 1rem;
    }
 
