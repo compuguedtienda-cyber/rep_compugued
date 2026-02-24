@@ -14,14 +14,12 @@
 
  body {
    margin: 0;
-  background: linear-gradient(160deg, #1a1f3c, #0b0f24);
-      display: flex;
+   background: linear-gradient(160deg, #1a1f3c, #0b0f24); 
+   display: flex;
    justify-content: center;
    padding: 0px;
    color: var(--text);
-   /* Control fondo imagen; */
-   
-   /* FIN control fondo imagen; */
+
  }
 
  .phone {
@@ -146,10 +144,7 @@
  /* FIN ACTIONS ===== */
 
 
- 
-
-
- .container {
+  .container {
    max-width: 420px;
    margin: auto;
    padding: 5px;
@@ -281,23 +276,6 @@
 
  }
 
- /* WEATHER TEXT */
- /* .weather-text {
-   font-size: 12px;
-   color: var(--text);
-   padding-left: 6px;
-   margin-top: 2px;
- } */
-
-
- footer {
-   text-align: center;
-   font-size: 17px;
-   color: var(--text);
-   line-height: 1.6;
- }
-
-
 .share-buttons {
    display: flex;
    flex-direction: column;
@@ -344,31 +322,17 @@
 
 
 
-
- /* ===== RESPONSIVE ===== */
+/* ===== RESPONSIVE ===== */
  @media(min-width:768px) {
     .phone {
     width: 100%;
    max-width: 420px;
    overflow: hidden;
    border-radius: 1rem;
-   box-shadow: 0 10px 10px rgba(187, 184, 184, 0.45);
-   margin: 1rem;
-   border: 2px solid #190af0;
- }
- }
-
- /* @media(min-width:769px) {
-   .phone {
-   width: 100%;
-   max-width: 420px;
-   overflow: hidden;
-   border-radius: 2rem;
-   box-shadow: 0 10px 10px rgba(187, 184, 184, 0.45);
    margin: 1rem;
    border: 3px solid #190af0;
  }
-   } */
+ }
 
    .contorno {
      width: 100%;
@@ -393,7 +357,6 @@
      max-width: 420px;
      border-radius: 1rem;
      overflow: hidden;
-     /* background-color: rgb(14, 168, 143); */
      padding: 1rem;
    }
 
