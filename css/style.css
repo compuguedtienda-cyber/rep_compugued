@@ -359,32 +359,20 @@
    margin: 1rem;
    border: 2px solid #190af0;
  }
- }
-
- @media(min-width:769px) {
-   .phone {
-   width: 100%;
-   max-width: 420px;
-   overflow: hidden;
-   border-radius: 2rem;
-   box-shadow: 0 10px 10px rgba(187, 184, 184, 0.45);
-   margin: 1rem;
-   border: 3px solid #190af0;
- }
-   }
-
    .contorno {
      width: 100%;
      max-width: 420px;
      border-radius: 1rem;
      overflow: hidden;
-     padding: 0.5rem;
+     /* background-color: rgb(14, 168, 143); */
+     padding: 1rem;
    }
+ }
  
  @media(min-width:1600px) {
    body {
      padding: 40px;
-     background-image: url("../img/fondo/f4.jpg");
+     background-image: url("../img/fondo/f1.jpg");
      background-size: cover;
      background-position: center;
      background-repeat: no-repeat;
