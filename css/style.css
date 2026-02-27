@@ -360,7 +360,14 @@
    margin: 1rem;
    border: 3px solid #190af0;
  }
- }
+}
+   .contorno {
+     width: 100%;
+     max-width: 420px;
+     border-radius: 1rem;
+     overflow: hidden;
+     padding: 0.5rem;
+   } 
 
  /* @media(min-width:769px) {
    .phone {
