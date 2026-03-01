@@ -259,6 +259,33 @@
    }
  }
 
+
+
+.medida-icon {
+  width: 34px;
+  height: 34px;
+}
+
+.medida-icon2 {
+  width: 43px;
+  height: 43px;
+}
+
+.medida-icon3 {
+  width: 34px;
+  height: 34px;
+}
+
+.medida-icon4 {
+  width: 24px;
+  height: 24px;
+}
+
+.medida-icon5 {
+  width: 27px;
+  height: 27px;
+}
+
  .icon-btn {
    background: var(--card);
    border-radius: 1rem;
@@ -284,16 +311,7 @@
 
  }
 
- /* WEATHER TEXT */
- /* .weather-text {
-   font-size: 12px;
-   color: var(--text);
-   padding-left: 6px;
-   margin-top: 2px;
- } */
-
-
- footer {
+footer {
    text-align: center;
    font-size: 17px;
    color: var(--text);
@@ -369,26 +387,6 @@
      padding: 0.5rem;
    } 
 
- /* @media(min-width:769px) {
-   .phone {
-   width: 100%;
-   max-width: 420px;
-   overflow: hidden;
-   border-radius: 2rem;
-   box-shadow: 0 10px 10px rgba(187, 184, 184, 0.45);
-   margin: 1rem;
-   border: 3px solid #190af0;
- }
-   }
-
-   .contorno {
-     width: 100%;
-     max-width: 420px;
-     border-radius: 1rem;
-     overflow: hidden;
-     padding: 0.5rem;
-   } */
- 
  @media(min-width:1600px) {
    body {
      padding: 40px;
@@ -410,3 +408,6 @@
  }
 
  /* ===== FIN RESPONSIVE ===== */
+
+
+
